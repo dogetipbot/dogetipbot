@@ -1,0 +1,120 @@
+all:
+    value: "Decimal( self.u_from.get_balance(coin=self.coin, kind=('withdraw' if bool(self.addr_to) else 'givetip'))) if self.u_from.is_registered() and bool(self.coin) else None"
+    for_fiat: false
+    for_coin: true
+    title: "__^[wow ^so ^verify]__:"
+    message: '^**(*・_・)ノ⌒*** {USER_FROM} ^gives {USER_TO} ^_everything_!.. ^all {AMOUNT} ^now ^belong ^to {USER_TO}'
+
+flip:
+    value: "Decimal(4.0)"
+    for_fiat: false
+    for_coin: true
+    title: "__^[wow ^so ^verify]__:"
+    message: '{USER_FROM} ^flips ^the ^table ^**(╯°□°）╯︵┻━┻** ^and {USER_TO} ^wins {AMOUNT}'
+
+megaflip:
+    value: "Decimal(randint(4,80)) "
+    for_fiat: false
+    for_coin: true
+    title: "__^[wow ^so ^verify]__:"
+    message: '{USER_FROM} ^flips ^10 ^tables ^**(╯°□°）╯︵┻━┻** ^and {USER_TO} ^wins {AMOUNT}'
+
+gigaflip:
+    value: "Decimal(randint(4,800))"
+    for_fiat: false
+    for_coin: true
+    title: "__^[wow ^so ^verify]__:"
+    message: '{USER_FROM} ^flips ^100 ^tables ^**(╯°□°）╯︵┻━┻** ^and {USER_TO} ^wins {AMOUNT}'
+
+roll:
+    value: "Decimal(4.0)"
+    for_fiat: false
+    for_coin: true
+    title: "__^[wow ^so ^verify]__:"
+    message: '{USER_FROM} ^rolls ^around ^and {USER_TO} ^gets {AMOUNT}'
+
+megaroll:
+    value: "Decimal(randint(4,240))"
+    for_fiat: false
+    for_coin: true
+    title: "__^[wow ^so ^verify]__:"
+    message: '{USER_FROM} ^rolls ^around ^and {USER_TO} ^gets {AMOUNT}'
+
+gigaroll:
+    value: "Decimal(randint(4,2400))"
+    for_fiat: false
+    for_coin: true
+    title: "__^[wow ^so ^verify]__:"
+    message: '{USER_FROM} ^rolls ^aroun ^and {USER_TO} ^gets {AMOUNT}'
+
+random250:
+    value: "Decimal( randint(0,250000) ) / Decimal(1000.0)"
+    for_fiat: false
+    for_coin: true
+    title: "__^[wow ^so ^verify]__:"
+    message: "{USER_FROM} ^asks ^randomness ^to ^decide ^luck ^of {USER_TO} ^and ^result ^is {AMOUNT}"
+
+random500:
+    value: "Decimal( randint(0,500000) ) / Decimal(1000.0)"
+    for_fiat: false
+    for_coin: true
+    title: "__^[wow ^so ^verify]__:"
+    message: "{USER_FROM} ^asks ^randomness ^to ^decide ^luck ^of {USER_TO} ^and ^result ^is {AMOUNT}"
+
+random1000:
+    value: "Decimal( randint(0,1000000) ) / Decimal(1000.0)"
+    for_fiat: false
+    for_coin: true
+    title: "__^[wow ^so ^verify]__:"
+    message: "{USER_FROM} ^asks ^randomness ^to ^decide ^luck ^of {USER_TO} ^and ^result ^is {AMOUNT}"
+
+blazeit:
+    value: "Decimal(420.00)"
+    for_fiat: false
+    for_coin: true
+    title: "__^[wow ^such ^blazeit]__:"
+    message: "lol 420 blaze it"
+
+lsd:
+    value: "Decimal(1967.00)"
+    for_fiat: false
+    for_coin: true
+    title: "__^[wow ^such ^kaleidoscope ^eyes]__:"
+    message: "wow such kaleidoscope eyes"
+
+dogecar:
+    value: "Decimal(98.00)"
+    for_fiat: false
+    for_coin: true
+    title: "__^[wow ^many ^vrooms]__:"
+    message: "wow such racecar"
+    
+joshwise:
+    value: "Decimal(98.00)"
+    for_fiat: false
+    for_coin: true
+    title: "__^[wow ^such ^driver]__:"
+    message: "wow such racecar"
+    
+
+    
+wutang:
+    value: "Decimal(36.00)"
+    for_fiat: false
+    for_coin: true
+    title: "__^[wow ^rules ^everything ^around ^me]__:"
+    message: "wow such racecar"
+
+netcodepool:
+    value: "Decimal(1337.00)"
+    for_fiat: false
+    for_coin: true
+    title: "__^[wow ^so ^verify]__:"
+    message: "wow such racecar"
+
+cake:
+    value: "Decimal(365.00)"
+    for_fiat: false
+    for_coin: true
+    title: "__^[wow ^so ^verify]__:"
+    message: "wow such birthday"

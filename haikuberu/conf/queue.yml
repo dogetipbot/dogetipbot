@@ -1,0 +1,35 @@
+scan:
+    batch_limit: 100
+
+production:
+    project: 'ironmq_project_id'
+    token: 'ironmq_token_id'
+    host: 'ironmq_host'
+    queue_in: 'queue_to_pull_from'
+    queue_out:
+        reddit: 'queue_to_push_notifications_to_reddit'
+        twitch: 'queue_to_push_notifications_to_twitch'
+        twitter: 'queue_to_push_notifications_to_twitter'
+        disqus: 'queue_to_push_notifications_to_disqus'
+
+staging:
+    project: 'ironmq_project_id'
+    token: 'ironmq_token_id'
+    host: 'ironmq_host'
+    queue_in: 'queue_to_pull_from'
+    queue_out:
+        reddit: 'queue_to_push_notifications_to_reddit'
+        twitch: 'queue_to_push_notifications_to_twitch'
+        twitter: 'queue_to_push_notifications_to_twitter'
+        disqus: 'queue_to_push_notifications_to_disqus'
+
+test:
+    project: 'ironmq_project_id'
+    token: 'ironmq_token_id'
+    host: 'ironmq_host'
+    queue_in: 'queue_to_pull_from'
+    queue_out:
+        reddit: 'queue_to_push_notifications_to_reddit'
+        twitch: 'queue_to_push_notifications_to_twitch'
+        twitter: 'queue_to_push_notifications_to_twitter'
+        disqus: 'queue_to_push_notifications_to_disqus'

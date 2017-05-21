@@ -1,0 +1,44 @@
+# Bitcoin
+btc:
+    enabled: false
+    unit: btc
+    name: Bitcoin
+    symbol: 'Ƀ'
+    config_file: '~/.bitcoin/bitcoin.conf'
+    minconf:
+        givetip: 1
+        withdraw: 144
+    txmin:
+        givetip: 0.00005
+        withdraw: 0.0005
+    txfee: 0.0001
+    walletpassphrase: 'passphrasegoeshere'
+    explorer:
+        address: 'http://blockchain.info/address/'
+        transaction: 'http://blockchain.info/tx/'
+    regex:
+        address: '([1|3][1-9a-z]{20,40})'
+        units: '(btc|bitcoin|bitcoins)'
+
+# Dogecoin
+dog:
+    enabled: true
+    unit: dog
+    name: Dogecoin
+    symbol: 'Ð'
+    config_file: '~/.dogecoin/dogecoin.conf'
+    config_rpcserver: '127.0.0.1'
+    minconf:
+        givetip: 6
+        withdraw: 6
+    txmin:
+        givetip: 4.0
+        withdraw: 1
+    txfee: 1
+    walletpassphrase: 'passphrasegoeshere'
+    explorer:
+        address: 'https://chain.so/address/DOGE/'
+        transaction: 'http://dogechain.info/tx/'
+    regex:
+        address: '([9AaD][1-9a-zA-Z]{20,40})'
+        units: '(doge|dogecoin|dogecoins|doges|Ð|dog|xdg)'

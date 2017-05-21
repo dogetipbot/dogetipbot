@@ -1,0 +1,8 @@
+# USD
+usd:
+    enabled: true
+    unit: usd
+    symbol: '$'
+    name: US Dollar
+    regex:
+        units: '(\$|usd)'

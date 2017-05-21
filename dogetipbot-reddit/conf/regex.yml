@@ -1,0 +1,365 @@
+values:
+    username:
+        regex: '(@[\w-]{3,20})'
+    amount:
+        regex: '([0-9]{1,9}(?:\.[0-9]{0,8})?)'
+    keywords:
+        regex: '(all|flip|megaflip|gigaflip|roll|megaroll|gigaroll|random250|random500|random1000|blazeit|lsd|dogecar|joshwise|wutang|netcodepool|cake)'
+    tip_init:
+        regex: '(/u/dogetipbot|dogetipbot)'
+
+actions: 
+    givetip:
+        enabled: true
+        public: true
+        simple: false
+        regex:
+            a:
+                value: '(\+){REGEX_TIP_INIT}(\s+){REGEX_AMOUNT}(\s+){REGEX_COIN}(\s+)?(verify)?'
+                rg_amount: 4
+                rg_keyword: 0
+                rg_address: 0
+                rg_to_user: 0
+                rg_coin: 6
+                rg_fiat: 0
+                rg_verify: 8
+            aa:
+                value: '(\+){REGEX_TIP_INIT}(\s+){REGEX_KEYWORD}(\s+){REGEX_COIN}(\s+)?(verify)?'
+                rg_amount: 0
+                rg_keyword: 4
+                rg_address: 0
+                rg_to_user: 0
+                rg_coin: 6
+                rg_fiat: 0
+                rg_verify: 8
+            b:
+                value: '(\+){REGEX_TIP_INIT}(\s+){REGEX_ADDRESS}(\s+){REGEX_AMOUNT}(\s+){REGEX_COIN}(\s+)?(verify)?'
+                rg_amount: 6
+                rg_keyword: 0
+                rg_address: 4
+                rg_to_user: 0
+                rg_coin: 8
+                rg_fiat: 0
+                rg_verify: 10
+            bb:
+                value: '(\+){REGEX_TIP_INIT}(\s+)([9AaD][1-9a-zA-Z]{20,40})(\s+){REGEX_KEYWORD}(\s+)?(verify)?'
+                rg_amount: 0
+                rg_keyword: 6
+                rg_address: 4
+                rg_to_user: 0
+                rg_coin: 0
+                rg_fiat: 0
+                rg_verify: 8
+            bbb:
+                value: '(\+){REGEX_TIP_INIT}(\s+){REGEX_ADDRESS}(\s+){REGEX_COIN}{REGEX_AMOUNT}(\s+)?(verify)?'
+                rg_amount: 7
+                rg_keyword: 0
+                rg_address: 4
+                rg_to_user: 0
+                rg_coin: 6
+                rg_fiat: 0
+                rg_verify: 9
+            bbbb:
+                value: '(\+){REGEX_TIP_INIT}(\s+){REGEX_ADDRESS}(\s+){REGEX_COIN}{REGEX_KEYWORD}(\s+)?(verify)?'
+                rg_amount: 0
+                rg_keyword: 7
+                rg_address: 4
+                rg_to_user: 0
+                rg_coin: 6
+                rg_fiat: 0
+                rg_verify: 9
+            bbbbbbbb:
+                value: '(\+){REGEX_TIP_INIT}(\s+){REGEX_ADDRESS}(\s+){REGEX_AMOUNT}(\s+)?(verify)?'
+                rg_amount: 6
+                rg_keyword: 0
+                rg_address: 4
+                rg_to_user: 0
+                rg_coin: 6
+                rg_fiat: 0
+                rg_verify: 8
+            c:
+                value: '(\+){REGEX_TIP_INIT}(\s+){REGEX_USER}(\s+){REGEX_AMOUNT}(\s+){REGEX_COIN}(\s+)?(verify)?'
+                rg_amount: 6
+                rg_keyword: 0
+                rg_address: 0
+                rg_to_user: 4
+                rg_coin: 8
+                rg_fiat: 0
+                rg_verify: 10
+            cc:
+                value: '(\+){REGEX_TIP_INIT}(\s+){REGEX_USER}(\s+){REGEX_KEYWORD}(\s+){REGEX_COIN}(\s+)?(verify)?'
+                rg_amount: 0
+                rg_keyword: 6
+                rg_address: 0
+                rg_to_user: 4
+                rg_coin: 8
+                rg_fiat: 0
+                rg_verify: 10
+            ccc:
+                value: '(\+){REGEX_TIP_INIT}(\s+){REGEX_USER}(\s+){REGEX_COIN}{REGEX_AMOUNT}(\s+)?(verify)?'
+                rg_amount: 7
+                rg_keyword: 0
+                rg_address: 0
+                rg_to_user: 4
+                rg_coin: 6
+                rg_fiat: 0
+                rg_verify: 9
+            cccc:
+                value: '(\+){REGEX_TIP_INIT}(\s+){REGEX_USER}(\s+){REGEX_COIN}{REGEX_KEYWORD}(\s+)?(verify)?'
+                rg_amount: 0
+                rg_keyword: 7
+                rg_address: 0
+                rg_to_user: 4
+                rg_coin: 6
+                rg_fiat: 0
+                rg_verify: 9
+            ccccc:
+                value: '(\+){REGEX_TIP_INIT}(\s+){REGEX_USER}(\s+){REGEX_KEYWORD}(\s+)?(verify)?'
+                rg_amount: 0
+                rg_keyword: 6
+                rg_address: 0
+                rg_to_user: 4
+                rg_coin: 0
+                rg_fiat: 0
+                rg_verify: 8
+            cccccc:
+                value: '(\+){REGEX_TIP_INIT}(\s+){REGEX_USER}(\s+){REGEX_AMOUNT}(\s+)?(verify)?'
+                rg_amount: 6
+                rg_keyword: 0
+                rg_address: 0
+                rg_to_user: 4
+                rg_coin: 0
+                rg_fiat: 0
+                rg_verify: 8
+            g:
+                value: '(\+){REGEX_TIP_INIT}(\s+){REGEX_COIN}{REGEX_AMOUNT}(\s+)?(verify)?'
+                rg_amount: 5
+                rg_keyword: 0
+                rg_address: 0
+                rg_to_user: 0
+                rg_coin: 4
+                rg_fiat: 0
+                rg_verify: 7
+            gg:
+                value: '(\+){REGEX_TIP_INIT}(\s+){REGEX_COIN}{REGEX_KEYWORD}(\s+)?(verify)?'
+                rg_amount: 0
+                rg_keyword: 5
+                rg_address: 0
+                rg_to_user: 0
+                rg_coin: 4
+                rg_fiat: 0
+                rg_verify: 7
+            ggggg:
+                value: '(\+){REGEX_TIP_INIT}(\s+){REGEX_KEYWORD}(\s+)?(verify)?'
+                rg_amount: 0
+                rg_keyword: 4
+                rg_address: 0
+                rg_to_user: 0
+                rg_coin: 0
+                rg_fiat: 0
+                rg_verify: 6
+            h:
+                value: '(\+){REGEX_TIP_INIT}(\s+){REGEX_AMOUNT}(\s+)?(verify)?'
+                rg_amount: 4
+                rg_keyword: 0
+                rg_address: 0
+                rg_to_user: 0
+                rg_coin: 0
+                rg_fiat: 0
+                rg_verify: 6
+    gold:
+        enabled: true
+        public: true
+        simple: true
+        regex: '(\+)(/u/dogetipbot|dogetipbot)(\s+)((g|G)old)(\s+)?(verify)?'
+
+    info:
+        enabled: true
+        public: false
+        simple: true
+        regex: '(\+)(info|balance)'
+    register:
+        enabled: true
+        public: false
+        simple: true
+        regex: '(\+)(register)'
+    accept:
+        enabled: true
+        public: false
+        simple: true
+        regex: '(\+)(accept)'
+    decline:
+        enabled: true
+        public: false
+        simple: true
+        regex: '(\+)(decline)'
+    withdraw:
+        enabled: true
+        public: false
+        simple: false
+        regex:
+            a:
+                value: '(\+)(withdraw)(\s+){REGEX_ADDRESS}(\s+){REGEX_AMOUNT}(\s+){REGEX_COIN}'
+                rg_amount: 6
+                rg_keyword: 0
+                rg_address: 4
+                rg_to_user: 0
+                rg_coin: 8
+                rg_fiat: 0
+                rg_verify: 0
+            aa:
+                value: '(\+)(withdraw)(\s+){REGEX_ADDRESS}(\s+){REGEX_KEYWORD}(\s+){REGEX_COIN}'
+                rg_amount: 0
+                rg_keyword: 6
+                rg_address: 4
+                rg_to_user: 0
+                rg_coin: 8
+                rg_fiat: 0
+                rg_verify: 0
+            aaa:
+                value: '(\+)(withdraw)(\s+){REGEX_ADDRESS}(\s+){REGEX_COIN}{REGEX_AMOUNT}'
+                rg_amount: 7
+                rg_keyword: 0
+                rg_address: 4
+                rg_to_user: 0
+                rg_coin: 6
+                rg_fiat: 0
+                rg_verify: 0
+            aaaa:
+                value: '(\+)(withdraw)(\s+){REGEX_ADDRESS}(\s+){REGEX_COIN}{REGEX_KEYWORD}'
+                rg_amount: 0
+                rg_keyword: 7
+                rg_address: 4
+                rg_to_user: 0
+                rg_coin: 6
+                rg_fiat: 0
+                rg_verify: 0
+            b:
+                value: '(\+)(withdraw)(\s+){REGEX_ADDRESS}(\s+){REGEX_FIAT}{REGEX_AMOUNT}(\s+){REGEX_COIN}'
+                rg_amount: 7
+                rg_keyword: 0
+                rg_address: 4
+                rg_to_user: 0
+                rg_coin: 9
+                rg_fiat: 6
+                rg_verify: 0
+            bb:
+                value: '(\+)(withdraw)(\s+){REGEX_ADDRESS}(\s+){REGEX_FIAT}{REGEX_KEYWORD}(\s+){REGEX_COIN}'
+                rg_amount: 0
+                rg_keyword: 7
+                rg_address: 4
+                rg_to_user: 0
+                rg_coin: 9
+                rg_fiat: 6
+                rg_verify: 0
+    history:
+        enabled: true
+        public: false
+        simple: true
+        regex: '(\+)(history)'
+    redeem:
+        enabled: false
+        public: false
+        simple: false
+        regex:
+            a:
+                value: '(\+)(redeem)(\s+){REGEX_COIN}'
+                rg_amount: 0
+                rg_keyword: 0
+                rg_address: 0
+                rg_to_user: 0
+                rg_coin: 4
+                rg_fiat: 0
+                rg_verify: 0
+    rates:
+        enabled: false
+        public: false
+        simple: true
+        regex: '(\+)(rates)'
+
+keywords:
+    all:
+        value: "Decimal( self.u_from.get_balance(coin=self.coin, kind=('withdraw' if bool(self.addr_to) else 'givetip'))) if self.u_from.is_registered() and bool(self.coin) else None"
+        for_fiat: false
+        for_coin: true
+        message: '^**(*・_・)ノ⌒*** {USER_FROM} ^gives {USER_TO} ^_everything_!.. ^all {AMOUNT} ^now ^belong ^to {USER_TO}'
+    flip:
+        value: "Decimal( (Decimal(self.ctb.conf.coins[self.coin].txmin.givetip) if bool(self.coin) else Decimal(0.01)) * Decimal(randint(1,2)) )"
+        for_fiat: false
+        for_coin: true
+        message: '{USER_FROM} ^flips ^the ^table ^**(╯°□°）╯︵┻━┻** ^and {USER_TO} ^gets {AMOUNT}'
+    megaflip:
+        value: "Decimal( (Decimal(self.ctb.conf.coins[self.coin].txmin.givetip) if bool(self.coin) else Decimal(0.01) * Decimal(randint(1,20)) )"
+        for_fiat: false
+        for_coin: true
+        message: '{USER_FROM} ^flips ^10 ^tables ^**(╯°□°）╯︵┻━┻** ^and {USER_TO} ^gets {AMOUNT}'
+    gigaflip:
+        value: "Decimal( (Decimal(self.ctb.conf.coins[self.coin].txmin.givetip) if bool(self.coin) else Decimal(0.01) * Decimal(randint(1,200)) )"
+        for_fiat: false
+        for_coin: true
+        message: '{USER_FROM} ^flips ^100 ^tables ^**(╯°□°）╯︵┻━┻** ^and {USER_TO} ^gets {AMOUNT}'
+    roll:
+        value: "Decimal( (Decimal(self.ctb.conf.coins[self.coin].txmin.givetip) if bool(self.coin) else Decimal(0.01) * Decimal(randint(1,6)) )"
+        for_fiat: false
+        for_coin: true
+        message: '{USER_FROM} ^rolls ^a ^die, ^and {USER_TO} ^gets {AMOUNT}'
+    megaroll:
+        value: "Decimal( (Decimal(self.ctb.conf.coins[self.coin].txmin.givetip) if bool(self.coin) else Decimal(0.01) * Decimal(randint(1,60)) )"
+        for_fiat: false
+        for_coin: true
+        message: '{USER_FROM} ^rolls ^a ^mega-die, ^and {USER_TO} ^gets {AMOUNT}'
+    gigaroll:
+        value: "Decimal( (Decimal(self.ctb.conf.coins[self.coin].txmin.givetip) if bool(self.coin) else Decimal(0.01) * Decimal(randint(1,600)) )"
+        for_fiat: false
+        for_coin: true
+        message: '{USER_FROM} ^rolls ^a ^giga-die, ^and {USER_TO} ^gets {AMOUNT}'
+    random250:
+        value: "Decimal( randint(0,250000) ) / Decimal(1000.0)"
+        for_fiat: false
+        for_coin: true
+        message: "{USER_FROM} ^asks ^randomness ^to ^decide ^luck ^of {USER_TO} ^and ^result ^is {AMOUNT}"
+    random500:
+        value: "Decimal( randint(0,500000) ) / Decimal(1000.0)"
+        for_fiat: false
+        for_coin: true
+        message: "{USER_FROM} ^asks ^randomness ^to ^decide ^luck ^of {USER_TO} ^and ^result ^is {AMOUNT}"
+    random1000:
+        value: "Decimal( randint(0,1000000) ) / Decimal(1000.0)"
+        for_fiat: false
+        for_coin: true
+        message: "{USER_FROM} ^asks ^randomness ^to ^decide ^luck ^of {USER_TO} ^and ^result ^is {AMOUNT}"
+    blazeit:
+        value: "Decimal(420)"
+        for_fiat: false
+        for_coin: true
+        message: "lol 420 blaze it"
+    lsd:
+        value: "Decimal(1967.00)"
+        for_fiat: false
+        for_coin: true
+        message: "wow such kaleidoscope eyes"
+    dogecar:
+        value: "Decimal(98.00)"
+        for_fiat: false
+        for_coin: true
+        message: "wow such racecar"
+    joshwise:
+        value: "Decimal(98.00)"
+        for_fiat: false
+        for_coin: true
+        message: "wow such racecar"
+    wutang:
+        value: "Decimal(36.00)"
+        for_fiat: false
+        for_coin: true
+        message: "wow such racecar"
+    netcodepool:
+        value: "Decimal(1337.00)"
+        for_fiat: false
+        for_coin: true
+        message: "wow such racecar"
+    cake:
+        value: "Decimal(365.00)"
+        for_fiat: false
+        for_coin: true
+        message: "wow such birthday"

@@ -1,0 +1,53 @@
+# USD
+usd:
+    enabled: true
+    unit: usd
+    symbol: '$'
+    name: US Dollar
+    regex:
+        units: '(\$|usd)'
+
+# CNY
+cny:
+    enabled: true
+    unit: cny
+    symbol: '¥'
+    name: Chinese Yuan
+    regex:
+        units: '(¥|cny)'
+
+# EUR
+eur:
+    enabled: true
+    unit: eur
+    symbol: '€'
+    name: Euro
+    regex:
+        units: '(€|eur)'
+
+# GBP
+gbp:
+    enabled: true
+    unit: gbp
+    symbol: '£'
+    name: British Pound
+    regex:
+        units: '(£|gbp)'
+
+# JPY
+jpy:
+    enabled: true
+    unit: jpy
+    symbol: '¥'
+    name: Japanese Yen
+    regex:
+        units: '(¥|jpy)'
+
+# RUB
+rub:
+    enabled: true
+    unit: rub
+    symbol: 'R'
+    name: Russian Ruble
+    regex:
+        units: '(r|rur)'

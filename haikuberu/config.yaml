@@ -1,0 +1,8 @@
+mysql:
+  url : localhost
+  username: site_user
+  password: justatestpass
+
+ironmq:
+  queue_name: dogetipbot-reddit
+  

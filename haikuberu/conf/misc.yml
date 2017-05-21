@@ -1,0 +1,18 @@
+times:
+    sleep_seconds: 10
+    expire_pending_hours: 48
+
+backup:
+    encryptionpassphrase: 'encryptionpassphrasegoeshere'
+
+qr_service_url: 'https://chart.googleapis.com/chart?cht=qr&choe=UTF-8&chs=300x300&chl='
+
+notify:
+    enabled: true
+    addr_from: 'from@example.com'
+    addr_to: 'from@example.com'
+    subject: 'haikuberu error'
+    smtp_host: ''
+    smtp_tls: true
+    smtp_username: ''
+    smtp_password: ''

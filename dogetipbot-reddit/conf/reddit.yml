@@ -1,0 +1,52 @@
+auth:
+    user: 'yourbotnamegoeshere'
+    password: ''
+    id: ''
+    secret: ''
+    redirect: ''
+
+scan:
+    batch_limit: 10
+    my_subreddits: false
+#    these_subreddits: ["all"]
+
+help:
+    enabled: true
+    url: 'http://www.reddit.com/r/dogetipbot/wiki/index'
+
+contact:
+    enabled: true
+    url: 'http://www.reddit.com/message/compose/?to=%2Fr%2Fdogetipbot'
+
+messages:
+    verified: true
+    pending: false
+    expired: false
+    declined: false
+    sorry: false
+
+redeem:
+    enabled: false
+    unit: 'usd'
+    multicoin: true
+    min_karma: 150
+    base: 0.1
+    multiplier:
+        link: 0.00005
+        comment: 0.000005
+    maximum: 0.5
+    account: 'dogetipbot'
+
+banned_users:
+    method: list
+    list: ['bitcointip', 'altcointip', 'AutoModerator','reddtipbot','dogehelpbot','cannatip','much_help']
+    subreddit: 'none'
+
+stats:
+    enabled: false
+    userflair: false
+    subreddit: dogetipbot
+    page: stats
+    url: http://www.reddit.com/r/dogetipbot/wiki/stats
+    page_tips: tips
+    url_tips: http://www.reddit.com/r/dogetipbot/wiki/tips

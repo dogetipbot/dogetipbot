@@ -1,0 +1,49 @@
+cryptsy:
+    enabled: true
+    domain: 'pubapi.cryptsy.com'
+    https: false
+    urlpaths: ['/api.php?method=singlemarketdata&marketid=132']
+    jsonpaths: ['return.markets.DOGE.lasttradeprice']
+    coinlist: ['btc','dog']
+    fiatlist: []
+    uppercase: true
+
+cryptsy2:
+    enabled: true
+    domain: 'pubapi.cryptsy.com'
+    https: false
+    urlpaths: ['/api.php?method=singlemarketdata&marketid=2']
+    jsonpaths: ['return.markets.BTC.lasttradeprice']
+    coinlist: ['btc']
+    fiatlist: ['usd']
+    uppercase: true
+
+cryptocoincharts:
+    enabled: false
+    domain: 'api.cryptocoincharts.info'
+    https: false
+    urlpaths: ['/tradingPair/dog_btc']
+    jsonpaths: ['price']
+    coinlist: ['btc','dog']
+    fiatlist: []
+    uppercase: true
+
+cryptocoincharts2:
+    enabled: false
+    domain: 'api.cryptocoincharts.info'
+    https: false
+    urlpaths: ['/tradingPair/btc_usd']
+    jsonpaths: ['price']
+    coinlist: ['btc']
+    fiatlist: ['usd']
+    uppercase: true
+
+#bitstamp:
+#    enabled: true
+#    domain: 'www.bitstamp.net'
+#    https: true
+#    urlpaths: ['/api/ticker/']
+#    jsonpaths: ['ask']
+#    coinlist: ['btc']
+#    fiatlist: ['usd']
+#    uppercase: false

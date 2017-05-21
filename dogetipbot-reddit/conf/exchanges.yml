@@ -1,0 +1,89 @@
+blockchaininfo:
+    enabled: false
+    domain: 'blockchain.info'
+    https: true
+    urlpaths: ['/ticker']
+    jsonpaths: ['{THING_TO}.15m']
+    coinlist: ['btc']
+    fiatlist: ['usd','cny','jpy','sgd','hkd','cad','aud','nzd','gbp','dkk','sek','brl','chf','eur','rub','sll','pln','thb']
+    uppercase: true
+
+vircurex:
+    enabled: false
+    domain: 'vircurex.com'
+    https: true
+    urlpaths: ['/api/get_highest_bid.json?base={THING_FROM}&alt={THING_TO}', '/api/get_lowest_ask.json?base={THING_FROM}&alt={THING_TO}']
+    jsonpaths: ['value']
+    coinlist: ['anc','btc','dgc','dvc','frc','ftc','i0c','ixc','ltc','nmc','nvc','ppc','trc','xpm']
+    fiatlist: ['usd','eur']
+    uppercase: true
+
+btce:
+    enabled: false
+    domain: 'btc-e.com'
+    https: true
+    urlpaths: ['/api/2/{THING_FROM}_{THING_TO}/ticker']
+    jsonpaths: ['ticker.avg']
+    coinlist: ['btc','ltc','nmc','nvc','trc','ppc','ftc','xpm']
+    fiatlist: ['usd','eur','rur']
+    uppercase: false
+
+bitstamp:
+    enabled: true
+    domain: 'www.bitstamp.net'
+    https: true
+    urlpaths: ['/api/ticker/']
+    jsonpaths: ['ask']
+    coinlist: ['btc']
+    fiatlist: ['usd']
+    uppercase: false
+
+mtgox:
+    enabled: false
+    domain: 'data.mtgox.com'
+    https: true
+    urlpaths: ['/api/2/{THING_FROM}{THING_TO}/money/ticker_fast']
+    jsonpaths: ['data.buy.value']
+    coinlist: ['btc']
+    fiatlist: ['usd','eur','jpy','gbp','rub']
+    uppercase: true
+
+campbx:
+    enabled: false
+    domain: 'campbx.com'
+    https: true
+    urlpaths: ['/api/xticker.php']
+    jsonpaths: ['Last Trade']
+    coinlist: ['btc']
+    fiatlist: ['usd']
+    uppercase: false
+
+cryptsy:
+    enabled: true
+    domain: 'pubapi.cryptsy.com'
+    https: false
+    urlpaths: ['/api.php?method=marketdatav2']
+    jsonpaths: ['return.markets.DOGE/BTC.lasttradeprice']
+    coinlist: ['btc','dog']
+    fiatlist: []
+    uppercase: true
+
+bter:
+    enabled: false
+    domain: 'bter.com'
+    https: true
+    urlpaths: ['/api/1/ticker/{THING_FROM}_{THING_TO}']
+    jsonpaths: ['avg']
+    coinlist: ['btc','ltc','ppc','frc','ftc','cnc','bqc','btb','wdc']
+    fiatlist: ['cny']
+    uppercase: false
+
+cryptotrade:
+    enabled: false
+    domain: 'crypto-trade.com'
+    https: true
+    urlpaths: ['/api/1/ticker/{THING_FROM}_{THING_TO}']
+    jsonpaths: ['data.min_ask', 'data.max_bid']
+    coinlist: ['btc','ltc','nmc','xpm','ppc','trc','ftc','dvc','wdc','dgc']
+    fiatlist: ['usd','eur'] 
+    uppercase: false
